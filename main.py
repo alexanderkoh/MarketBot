@@ -40,7 +40,7 @@ def isCryptoSupported(crypto):
 
 def checkPriceTrend(startPrice,endPrice,priceTargets):
     if startPrice < endPrice:
-        return normal_alert(startPrice,endPrice, priceTargets)
+        return normal_alert(startPrice,endPrice,priceTargets)
     elif startPrice == endPrice:
         return []
     else:
@@ -116,7 +116,7 @@ async def detectPriceAlert(crypto,priceTargets):
           db['hitPriceTarget'] = 0
 
   # set a thread that runs detectPriceAlert every 5 seconds
-  Timer(5.0, await detectPriceAlert(crypto,priceTargets)).start() 
+  Timer(5.0,await detectPriceAlert(crypto,priceTargets)).start() 
   print("--Finished--")
 
 
@@ -140,8 +140,8 @@ async def on_message(message):
   if message.author == client.user:
     return
 
-  if message.content.startswith('ya'):
-    await message.channel.send('yeet')
+  if message.content.startswith('$help'):
+    await message.channel.send('Commands')
 
   # send crypto price directly 
   if message.content.lower() in db.keys():
