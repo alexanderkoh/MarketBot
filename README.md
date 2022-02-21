@@ -1,6 +1,8 @@
 # MarketBot
 Discord Bot fetching cryptocurrency data from CoinGecko API. Built with Python, and hosted in repl.it.
 
+![Crypto Markets Bot](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/32191843-9005-41e8-a7c2-1fa4d4238f04/thumbnail.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220221%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220221T133108Z&X-Amz-Expires=86400&X-Amz-Signature=0c0a01dec015263af88a4bb2a6162d4d2153c6a67944f462be99e212848247fb&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22thumbnail.png%22&x-id=GetObject)
+
 #### Connected APIs:
 - [x] Currently, only showing data from CoinGecko API.
 - [ ] https://bit.ly/3v3ks9g
